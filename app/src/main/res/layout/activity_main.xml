@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="emazdoor.spacetime.Auth.LoginActivity"
+    android:background="@mipmap/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/spaceTimeLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/logo"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:visibility="visible"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/logoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="cursive"
+                    android:textSize="27sp"
+                    android:layout_marginTop="17dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/spaceTimeLogo"
+
+                    />
+                <LinearLayout
+                    android:id="@+id/input_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="45dp"
+
+                    android:layout_centerInParent="true"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:imeOptions="actionNext"
+                        android:textSize="16sp"
+                        android:hint="Email"
+                        android:padding="13dp"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/input_text_box"
+                        />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:hint="Password"
+                        android:textSize="16sp"
+                        android:padding="13dp"
+                        android:maxLines="1"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/input_text_box"
+                        android:layout_marginTop="16dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="48dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="21sp"
+                    android:paddingTop="14dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="40dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/bg_login_btn"
+                    android:layout_above="@+id/signupBtn"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <Button
+                    android:id="@+id/signupBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="34sp"
+                    android:paddingRight="34sp"
+                    android:paddingTop="8sp"
+                    android:paddingBottom="8sp"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:text="Sign up with Email"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_sign_up_btn"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contentPanel"
+        />
+</android.support.design.widget.CoordinatorLayout>
