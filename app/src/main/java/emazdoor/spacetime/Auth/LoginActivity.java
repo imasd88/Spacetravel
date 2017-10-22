@@ -20,7 +20,7 @@ import org.json.JSONException;
 import emazdoor.spacetime.Constants;
 import emazdoor.spacetime.R;
 import emazdoor.spacetime.Util;
-import emazdoor.spacetime.dashboard.DashboardActivity;
+import emazdoor.spacetime.screens.planet.PlanetSelectorActivity;
 import emazdoor.spacetime.helper.ActivityUtils;
 import emazdoor.spacetime.helper.ProgressWheel;
 import emazdoor.spacetime.network.SpaceTravelRestClient;
@@ -157,7 +157,7 @@ public class LoginActivity extends AppCompatActivity implements
 
     private void navigateToDashboard() {
         Intent i = new Intent();
-        i.setClass(this, DashboardActivity.class);
+        i.setClass(this, PlanetSelectorActivity.class);
         startActivity(i);
         finish();
     }

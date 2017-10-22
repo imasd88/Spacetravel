@@ -1,4 +1,4 @@
-package emazdoor.spacetime.dashboard;
+package emazdoor.spacetime.network;
 
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -8,7 +8,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import cz.msebera.android.httpclient.Header;
-import emazdoor.spacetime.network.SpaceTravelRestClient;
 
 /**
  * Created by sidhu on 10/19/2017.

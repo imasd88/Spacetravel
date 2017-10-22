@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@mipmap/background"
+    tools:context="emazdoor.spacetime.screens.dashboard.DashboardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Select Planet"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/planets"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:text="planets"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabPaddingTop="35dp"
+       app:tabMode="fixed"
+
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@android:color/white"
+        android:id="@+id/tabs"
+        >
+        </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_bg"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

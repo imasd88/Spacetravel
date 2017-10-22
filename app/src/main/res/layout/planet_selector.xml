@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<emazdoor.spacetime.screens.planet.PlanetSelectorItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e8e8eb"
+        />
+    <CheckBox
+        android:id="@+id/cbPlanet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/planet_selector"
+        android:button="@null"
+        android:drawablePadding="17dp"
+        android:background="@drawable/planet_selector_bg"
+        android:checked="false"
+        android:text="Jupitor"
+        android:padding="14dp"
+        android:textSize="26sp"
+        android:shadowColor="@android:color/white"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+
+        android:textColor="@drawable/planet_selector"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888c91"
+        />
+
+</emazdoor.spacetime.screens.planet.PlanetSelectorItemView>
